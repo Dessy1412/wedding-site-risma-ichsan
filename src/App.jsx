@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Router>
-        <audio ref={audioRef} src="music.mp3" loop />
+        <audio ref={audioRef} src="/images/music.mp3" loop />
         <Routes>
           <Route path="/" element={<Cover />} />
           <Route path="/detailundangan" element={<DetailUndangan />} />s
