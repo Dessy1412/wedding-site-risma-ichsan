@@ -22,41 +22,44 @@ export default function DetailUndangan() {
   const [ucapan, setUcapan] = useState("");
   const [status, setStatus] = useState("");
   const [wishes, setWishes] = useState([]);
-  // Efek animasi muncul perlahan saat section digulir ke layar
+
+  // --- 1. SINGLE INTERSECTION OBSERVER DENGAN TIMEOUT (OPTIMASI PERFORMA) ---
   useEffect(() => {
-    const sections = document.querySelectorAll(
-      ".detail-undangan-wrapper section",
-    );
+    const timer = setTimeout(() => {
+      const sections = document.querySelectorAll(
+        ".detail-undangan-wrapper section",
+      );
 
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.15,
-    };
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.15,
+      };
 
-    const observerCallback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-        }
-      });
-    };
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+          }
+        });
+      };
 
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions,
-    );
+      const observer = new IntersectionObserver(
+        observerCallback,
+        observerOptions,
+      );
 
-    sections.forEach((sec) => {
-      observer.observe(sec);
-    });
+      sections.forEach((sec) => observer.observe(sec));
 
-    return () => {
-      sections.forEach((sec) => {
-        observer.unobserve(sec);
-      });
-    };
+      return () => {
+        sections.forEach((sec) => observer.unobserve(sec));
+      };
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, []);
+
+  // --- 2. AUDIO AUTOPLAY & LIFECYCLE ---
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current
@@ -88,6 +91,7 @@ export default function DetailUndangan() {
     }
   };
 
+  // --- 3. RSVP & WISHES HANDLER ---
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -123,6 +127,7 @@ export default function DetailUndangan() {
     setHideBtn(true);
   };
 
+  // --- 4. COUNTDOWN TIMER ---
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -161,6 +166,8 @@ export default function DetailUndangan() {
     navigator.clipboard.writeText(text);
     alert("Berhasil disalin ke clipboard!");
   };
+
+  // --- 5. TAB VISIBILITY CHANGE (PAUSE/PLAY MUSIC) ---
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (!audioRef || !audioRef.current) return;
@@ -202,6 +209,7 @@ export default function DetailUndangan() {
             src="/images/bghero.webp"
             alt="Hero Background Undangan"
             className="hero-image"
+            loading="lazy"
           />
           <div className="hero-content">
             <div className="hero-names-box">
@@ -229,6 +237,7 @@ export default function DetailUndangan() {
             src="/images/bgquran.webp"
             alt="Quran Background"
             className="quran-image"
+            loading="lazy"
           />
           <div className="quran-content">
             <div className="quran-initials">RI</div>
@@ -260,6 +269,7 @@ export default function DetailUndangan() {
             src="/images/bgbride.webp"
             alt="Bride and Groom Background"
             className="bg-card-image"
+            loading="lazy"
           />
           <div className="bg-card-content">
             <div className="bg-person-block bride-block">
@@ -309,6 +319,7 @@ export default function DetailUndangan() {
             src="/images/countdown.webp"
             alt="Countdown Frame"
             className="std-countdown-image"
+            loading="lazy"
           />
           <div className="std-countdown-content">
             <div className="std-timer-row">
@@ -385,6 +396,7 @@ export default function DetailUndangan() {
             src="/images/weddinggift.webp"
             alt="Wedding Gift Curtain"
             className="wg-hero-image"
+            loading="lazy"
           />
           <div className="wg-hero-content">
             <h2 className="wg-main-title">Wedding Gift</h2>
@@ -416,6 +428,7 @@ export default function DetailUndangan() {
                     src="/images/mandirilogo.png"
                     alt="bank"
                     className="wg-bank-logo"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -438,6 +451,7 @@ export default function DetailUndangan() {
                     src="/images/brilogo.png"
                     alt="bank"
                     className="wg-bank-logo"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -485,6 +499,7 @@ export default function DetailUndangan() {
               src="/images/rsvp.webp"
               alt="RSVP Envelope"
               className="rsvp-envelope-img"
+              loading="lazy"
             />
           </div>
           <div className="rsvp-header-text">
@@ -572,6 +587,7 @@ export default function DetailUndangan() {
             src="/images/closingbg1.webp"
             alt="Closing Background"
             className="closing-bg-image"
+            loading="lazy"
           />
           <div className="closing-content">
             <h2 className="closing-title">Terima Kasih</h2>
