@@ -1,0 +1,9 @@
+.invitation {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  margin-inline: auto;
+  position: relative;
+  overflow: clip;
+  background: var(--color-background);
+}

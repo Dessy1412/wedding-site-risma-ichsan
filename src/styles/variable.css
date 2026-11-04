@@ -1,0 +1,13 @@
+@import "tailwindcss";
+:root {
+  --color-primary: #4e5634;
+  --color-secondary: #56552b;
+  --color-background: #fffdf5;
+  --color-text: #56552b;
+  --color-text-light: #fffdf5;
+
+  --font-heading: "EB Garamond", Georgia, serif;
+  --font-script: "Dancing Script", cursive;
+  --font-script-secon: "Pinyon Script", cursive;
+  --font-body: "Cormorant Garamond", Georgia, serif;
+}

@@ -1,0 +1,1453 @@
+.detail-undangan-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: var(--color-background);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Hero Section */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-names-box {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 15%;
+}
+.hero-subtitle {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  font-family: var(--font-heading);
+  font-size: clamp(0.65rem, 3vw, 0.85rem);
+  letter-spacing: 0.15em;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.hero-bride,
+.hero-ampersand,
+.hero-groom {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  margin: 0;
+  white-space: nowrap;
+  padding-top: 0;
+  font-family: var(--font-script-secon);
+  font-size: clamp(2rem, 8vw, 2.8rem);
+  color: var(--color-primary);
+  font-weight: 300;
+  line-height: 1.1;
+}
+.hero-date-box {
+  position: absolute;
+  bottom: 24%;
+  left: 8%;
+  text-align: center;
+  color: var(--color-text-light);
+  width: 28%;
+}
+.hero-date-day {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3.8vw, 1.7rem);
+  display: block;
+  line-height: 1.5;
+}
+.hero-date-month {
+  font-family: var(--font-script-secon);
+  font-size: clamp(1.4rem, 4.2vw, 1.9rem);
+  display: block;
+  line-height: 1.1;
+}
+.hero-date-year {
+  font-family: var(--font-heading);
+  font-size: clamp(0.95rem, 2.8vw, 1.3rem);
+  display: block;
+  letter-spacing: 0.04em;
+}
+.hero-initials {
+  position: absolute;
+  bottom: 15.5%;
+  right: 17%;
+  font-family: var(--font-script-secon);
+  font-size: clamp(2.5rem, 5vw, 2rem);
+  color: var(--color-text-light);
+  text-align: center;
+  width: 22%;
+  letter-spacing: 0.1em;
+}
+
+/* Section  Surah */
+.quran-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+.quran-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.quran-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 25px;
+}
+.quran-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 12% 15%;
+  text-align: center;
+}
+.quran-initials {
+  font-family: var(--font-script-secon);
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  color: var(--color-text-light);
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: clamp(1rem, 3vw, 1.8rem);
+}
+.quran-text {
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 2.1vw, 0.95rem);
+  font-style: italic;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin-bottom: clamp(1rem, 3vw, 1.8rem);
+  opacity: 0.95;
+}
+.quran-source {
+  font-family: var(--font-heading);
+  font-size: clamp(0.8rem, 2.2vw, 1rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-text-light);
+}
+
+/* BrideGroom Section */
+.bg-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+.bg-header-box {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+}
+.bg-main-title {
+  font-family: var(--font-script-secon);
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.bg-opening-text {
+  font-family: var(--font-body);
+  font-size: clamp(0.78rem, 2vw, 1rem);
+  color: var(--color-text);
+  line-height: 1.4;
+  opacity: 0.9;
+  padding: 0 0.2rem;
+}
+.bg-card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.bg-card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.bg-card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 8% 6% 6% 6%;
+  text-align: center;
+  gap: 0.3rem;
+}
+.bg-person-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg-person-name {
+  font-family: var(--font-script-secon);
+  font-size: clamp(1.2rem, 4.5vw, 1.7rem);
+  color: var(--color-text-light);
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.bg-person-parent {
+  font-family: var(--font-body);
+  font-size: clamp(0.68rem, 2vw, 0.85rem);
+  color: var(--color-text-light);
+  line-height: 1.4;
+  opacity: 0.9;
+  margin-bottom: 0.3rem;
+  max-width: 92%;
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: normal !important;
+  word-break: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+.bg-ig-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid #fffdf5;
+  color: var(--color-text-light);
+  padding: 0.25rem 0.8rem;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: clamp(0.65rem, 1.7vw, 0.75rem);
+  text-decoration: none;
+  gap: 0.4rem;
+  transition: all 0.3s ease;
+}
+.bg-ig-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.ig-icon {
+  font-size: 0.85rem;
+}
+.bg-ampersand {
+  font-family: var(--font-script-secon);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--color-text-light);
+  font-weight: 300;
+  line-height: 1;
+  margin: 0.1rem 0;
+}
+
+/* Save The Date */
+.std-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+.std-main-title {
+  font-family: var(--font-script-secon);
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+/* Countdown */
+.std-countdown-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+}
+.std-countdown-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.std-countdown-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10%;
+}
+.std-timer-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.4rem, 2vw, 1rem);
+  color: var(--color-primary);
+}
+.std-time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.std-number {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 4.5vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.std-label {
+  font-family: var(--font-heading);
+  font-size: clamp(0.55rem, 1.5vw, 0.75rem);
+  letter-spacing: 0.1em;
+  margin-top: 0.2rem;
+  opacity: 0.85;
+}
+.std-colon {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 4.5vw, 2.2rem);
+  font-weight: 600;
+  margin-top: -1rem;
+}
+/* Event Card */
+.std-event-card {
+  width: 100%;
+  max-width: 380px;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border-radius: 190px 190px 20px 20px;
+  padding: 1.2rem;
+  box-sizing: border-box;
+}
+.std-card-inner-border {
+  width: 100%;
+  border: 2px solid var(--color-text-light);
+  border-radius: 175px 175px 12px 12px;
+  padding: 2rem 1rem 1.5rem 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.std-event-section {
+  margin-bottom: 0.2rem;
+  width: 100%;
+}
+.std-event-title {
+  font-family: var(--font-heading);
+  font-size: clamp(0.8rem, 2.1vw, 0.95rem);
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.std-event-day {
+  font-family: var(--font-heading);
+  font-size: clamp(0.85rem, 2.3vw, 1rem);
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+.std-event-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  opacity: 0.9;
+  font-style: italic;
+}
+.std-time-icon {
+  font-size: 0.9rem;
+}
+.std-divider-line {
+  width: 70px;
+  height: 2px;
+  background-color: var(--color-background);
+  margin: 0.8rem auto;
+  opacity: 0.9;
+}
+.std-location-box {
+  margin: 0.5rem 0 1rem 0;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+.std-loc-title {
+  font-family: var(--font-heading);
+  font-size: clamp(0.8rem, 2.2vw, 0.95rem);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.05em;
+}
+.std-loc-name {
+  font-family: var(--font-heading);
+  font-size: clamp(0.85rem, 2.3vw, 1rem);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.std-loc-address {
+  font-family: var(--font-body);
+  font-size: clamp(0.68rem, 1.7vw, 0.75rem);
+  line-height: 1.4;
+  opacity: 0.85;
+}
+.std-maps-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  font-weight: 600;
+  padding: 0.45rem 1.1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 0.2rem;
+  gap: 0.5rem;
+}
+.std-maps-btn:hover {
+  background-color: #f0ebd8;
+  transform: translateY(-2px);
+}
+
+/* Wedding Gift */
+.wg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+}
+.wg-hero-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.wg-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.wg-hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 0% 8% 8% 8%;
+  text-align: center;
+}
+.wg-main-title {
+  font-family: var(--font-script-secon);
+  font-size: clamp(2.2rem, 6vw, 3rem);
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-top: 0rem;
+  margin-bottom: 35%;
+}
+
+.wg-description {
+  font-family: var(--font-body);
+  font-size: clamp(0.7rem, 1.8vw, 0.82rem);
+  color: var(--color-text);
+  line-height: 1.5;
+  opacity: 0.9;
+  max-width: 170px;
+  margin: 0 auto 1.2rem auto;
+}
+.wg-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  font-family: var(--font-body);
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  padding: 0.2rem 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  gap: 0.4rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.wg-toggle-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.wg-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  margin-top: -1.5rem;
+  padding: 2rem 1.2rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.wg-toggle-btn.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.wg-toggle-btn {
+  transition: all 0.3s ease;
+}
+.wg-card {
+  background-color: var(--color-primary);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.wg-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+.wg-bank-name {
+  font-family: var(--font-heading);
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-weight: 700;
+  color: var(--color-text-light);
+  letter-spacing: 0.05em;
+}
+.wg-card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90px;
+}
+.wg-bank-logo {
+  width: 100%;
+  max-width: 75px;
+  height: auto;
+  object-fit: contain;
+}
+.wg-card-body {
+  margin-bottom: 1rem;
+}
+.wg-acc-number {
+  font-family: var(--font-heading);
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.05em;
+}
+.wg-acc-name,
+.wg-phone,
+.wg-address {
+  font-family: var(--font-body);
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+  color: var(--color-text-light);
+  margin-top: 0.1rem;
+}
+.wg-copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-text-light);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: clamp(0.68rem, 1.8vw, 0.75rem);
+  padding: 0.45rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  gap: 0.3rem;
+  transition: background 0.2s ease;
+}
+.wg-copy-btn:hover {
+  background-color: #f0ebd8;
+}
+.wg-gift-icon {
+  width: 100%;
+  max-width: 55px;
+  height: auto;
+  font-size: 2rem;
+  color: var(--color-text-light);
+  object-fit: contain;
+}
+
+/* RSVP */
+.rsvp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 999;
+}
+
+/* Gambar Amplop RSVP */
+.rsvp-image-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.rsvp-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rsvp-image-wrapper {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+.rsvp-envelope-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.rsvp-header-text {
+  flex: 1;
+  text-align: center;
+}
+
+.rsvp-title {
+  font-family: var(--font-script-secon);
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  color: var(--color-primary);
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+  line-height: 1.1;
+}
+.rsvp-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+  color: var(--color-text);
+  opacity: 0.9;
+  line-height: 1.4;
+}
+.rsvp-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.rsvp-input-group {
+  width: 100%;
+}
+.rsvp-input-name,
+.rsvp-textarea-msg {
+  width: 100%;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  color: var(--color-text);
+  box-sizing: border-box;
+  outline: none;
+}
+.rsvp-textarea-msg {
+  resize: none;
+}
+.rsvp-label-status {
+  font-family: var(--font-heading);
+  font-size: clamp(0.8rem, 2.2vw, 0.95rem);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+  margin: 0.2rem 0;
+  letter-spacing: 0.05em;
+}
+.rsvp-status-buttons {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.rsvp-status-btn {
+  flex: 1;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-primary);
+  border-radius: 50px;
+  padding: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  font-weight: 600;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.rsvp-status-btn.active-hadir,
+.rsvp-status-btn.active-tidakhadir {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+.rsvp-submit-btn {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem;
+  font-family: var(--font-heading);
+  font-size: clamp(0.8rem, 2.2vw, 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.rsvp-submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+.rsvp-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.rsvp-wishes-scroll-container {
+  width: 100%;
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.rsvp-wishes-scroll-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.rsvp-wishes-scroll-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
+
+.rsvp-wishes-scroll-container::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.rsvp-wishes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.rsvp-wish-card {
+  background-color: var(--color-background);
+  border: 1px solid rgba(88, 94, 69, 0.2);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.rsvp-wish-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.rsvp-wish-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: black;
+}
+
+.rsvp-badge {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.2rem 0.7rem;
+  border-radius: 50px;
+  letter-spacing: 0.03em;
+}
+
+.badge-hadir {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge-tidakhadir {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.rsvp-wish-msg {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: black;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.rsvp-empty-text {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-text);
+  opacity: 0.7;
+  padding: 1rem;
+}
+
+/* Closing Section */
+.closing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 999;
+}
+.closing-bg-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+}
+.closing-bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.closing-content {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--color-primary);
+  padding: 1rem 0;
+  gap: 1.5rem;
+}
+.closing-title {
+  font-family: var(--font-script-secon);
+  font-size: clamp(2rem, 4.5vw, 2.2rem);
+  font-weight: 300;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+.closing-desc {
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 1.5vw, 0.73rem);
+  line-height: 2;
+  opacity: 0.9;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+.closing-salam {
+  font-family: var(--font-heading);
+  font-size: clamp(0.8rem, 1.7vw, 0.78rem);
+  font-weight: 600;
+  line-height: 2;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+}
+.closing-family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.closing-label {
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 1.5vw, 0.72rem);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.09em;
+}
+.closing-names {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 3.2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* footer section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  box-sizing: border-box;
+}
+
+.footer-made {
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
+  opacity: 0.8;
+}
+
+.footer-brand {
+  font-size: 1.3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-brand span {
+  font-size: 1.3rem;
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 2px;
+  margin-left: 4px;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+
+.footer-icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-light);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-contact {
+  max-width: 300px;
+  margin: 0 auto 20px;
+  font-size: 0.7rem;
+  line-height: 1.8;
+  opacity: 0.8;
+  font-family: "Cormorant Garamond", serif;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper,
+  .quran-wrapper,
+  .bg-card-wrapper,
+  .std-countdown-wrapper,
+  .std-event-card,
+  .wg-hero-wrapper,
+  .wg-cards-container,
+  .rsvp-container,
+  .closing-bg-wrapper,
+  .footer-section {
+    max-width: 580px !important;
+  }
+  body {
+    font-size: 1.15rem;
+  }
+  .hero-bride,
+  .hero-groom {
+    font-size: 3rem !important;
+  }
+
+  .hero-ampersand {
+    font-size: 1.8rem !important;
+  }
+  .bg-main-title,
+  .std-main-title,
+  .wg-main-title,
+  .rsvp-title,
+  .closing-title {
+    font-size: clamp(2.5rem, 4.5vw, 3rem) !important;
+  }
+  .quran-container,
+  .bg-section-container,
+  .std-container,
+  .wg-container,
+  .rsvp-container,
+  .closing-container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .rsvp-input-name,
+  .rsvp-textarea-msg,
+  .rsvp-submit-btn,
+  .std-maps-btn,
+  .wg-toggle-btn,
+  .wg-copy-btn {
+    font-size: 1rem !important;
+    padding: 0.3rem 1rem !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .bg-card-content {
+    padding-top: 10%;
+  }
+  .bg-main-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .wg-description {
+    max-width: 122px;
+    font-size: 0.65rem;
+  }
+  .wg-card {
+    padding: 0.9rem;
+  }
+  .wg-bank-name {
+    font-size: 0.95rem;
+  }
+  .wg-acc-number {
+    font-size: 0.85rem;
+  }
+  .wg-acc-name,
+  .wg-phone,
+  .wg-address {
+    font-size: 0.7rem;
+  }
+  .wg-copy-btn {
+    font-size: 0.65rem;
+    padding: 0.4rem;
+  }
+  .closing-title {
+    font-size: 1.8rem;
+  }
+  .closing-desc {
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+  .closing-salam {
+    font-size: 0.7rem;
+    line-height: 1.2;
+    margin-bottom: 0.2rem;
+  }
+  .closing-label {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
+  .closing-names {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animasi */
+.detail-undangan-wrapper section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.detail-undangan-wrapper section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- ANIMASI HERO SECTION  --- */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero-wrapper {
+  animation: heroFadeIn 1.5s ease-out forwards;
+}
+.hero-subtitle,
+.hero-names-box {
+  opacity: 0;
+  animation: heroFadeIn 1.4s ease-out 0.3s forwards;
+}
+.hero-date-box {
+  opacity: 0;
+  animation: heroFadeIn 1.4s ease-out 0.6s forwards;
+}
+.hero-initials {
+  opacity: 0;
+  animation: heroFadeIn 1.4s ease-out 0.9s forwards;
+}
+
+/* --- ANIMASI QURAN / SURAH SECTION --- */
+@keyframes quranSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.quran-container.is-visible .quran-wrapper {
+  animation: quranSlideDown 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.quran-container.is-visible .quran-initials {
+  opacity: 0;
+  animation: quranSlideDown 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+.quran-container.is-visible .quran-text {
+  opacity: 0;
+  animation: quranSlideDown 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+}
+.quran-container.is-visible .quran-source {
+  opacity: 0;
+  animation: quranSlideDown 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
+}
+
+/* --- ANIMASI BRIDE & GROOM SECTION  --- */
+@keyframes bgSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.bg-section-container.is-visible .bg-header-box {
+  animation: bgSlideDown 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.bg-section-container.is-visible .bg-card-wrapper {
+  opacity: 0;
+  animation: bgSlideDown 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+.bg-section-container.is-visible .bride-block {
+  opacity: 0;
+  animation: bgSlideDown 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+.bg-section-container.is-visible .bg-ampersand {
+  opacity: 0;
+  animation: bgSlideDown 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+}
+.bg-section-container.is-visible .groom-block {
+  opacity: 0;
+  animation: bgSlideDown 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
+}
+
+/* --- ANIMASI SAVE THE DATE SECTION --- */
+@keyframes stdSlideDownSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.std-container.is-visible .std-main-title {
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.std-container.is-visible .std-countdown-wrapper {
+  opacity: 0;
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+.std-container.is-visible .std-event-card {
+  opacity: 0;
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+/* --- ANIMASI SAVE THE DATE SECTION --- */
+@keyframes stdSlideDownSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.std-container.is-visible .std-main-title {
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.std-container.is-visible .std-countdown-wrapper {
+  opacity: 0;
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+.std-container.is-visible .std-event-card {
+  opacity: 0;
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
+}
+.std-container.is-visible .std-event-section:nth-of-type(1) {
+  opacity: 0;
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
+}
+.std-container.is-visible .std-event-section:nth-of-type(2) {
+  opacity: 0;
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.2s forwards;
+}
+.std-container.is-visible .std-location-box,
+.std-container.is-visible .std-maps-btn {
+  opacity: 0;
+  animation: stdSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.5s forwards;
+}
+
+/* --- ANIMASI WEDDING GIFT SECTION --- */
+@keyframes wgSlideDownSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.wg-container.is-visible .wg-hero-wrapper {
+  animation: wgSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.wg-container.is-visible .wg-toggle-btn {
+  animation: buttonPulse 2s infinite ease-in-out;
+}
+/* --- ANIMASI ZIGZAG UNTUK KARTU-KARTU REKENING --- */
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.wg-cards-container .wg-card:nth-child(1) {
+  opacity: 0;
+  animation: slideFromLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.wg-cards-container .wg-card:nth-child(2) {
+  opacity: 0;
+  animation: slideFromRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+.wg-cards-container .wg-cards-container .wg-card:nth-child(3),
+.wg-cards-container .wg-card:nth-child(3) {
+  opacity: 0;
+  animation: slideFromLeft 2s cubic-bezier(0.16, 1, 0.3, 1) 1.6s forwards;
+}
+
+/* --- ANIMASI RSVP & WISHES SECTION  --- */
+@keyframes rsvpSlideDownSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rsvp-container.is-visible .rsvp-top-row {
+  animation: rsvpSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.rsvp-container.is-visible .rsvp-form {
+  opacity: 0;
+  animation: rsvpSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+}
+.rsvp-container.is-visible .rsvp-wishes-scroll-container {
+  opacity: 0;
+  animation: rsvpSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+}
+
+/* --- ANIMASI CLOSING SECTION --- */
+@keyframes closingSlideDownSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.closing-container.is-visible .closing-bg-wrapper {
+  animation: closingSlideDownSlow 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.closing-container.is-visible .closing-title {
+  opacity: 0;
+  animation: closingSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s
+    forwards;
+}
+.closing-container.is-visible .closing-desc {
+  opacity: 0;
+  animation: closingSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.8s
+    forwards;
+}
+.closing-container.is-visible .closing-salam {
+  opacity: 0;
+  animation: closingSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.2s
+    forwards;
+}
+.closing-container.is-visible .closing-family {
+  opacity: 0;
+  animation: closingSlideDownSlow 1.8s cubic-bezier(0.16, 1, 0.3, 1) 1.6s
+    forwards;
+}
